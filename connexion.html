@@ -6,29 +6,49 @@
     <title>Login</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body> 
+<body>
 
     <style>
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
-    margin: 0;
+    margin: 280px;
     padding: 0;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
 }
 
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100px;
+    width: 800px;
+    background-color:white;
+}
+.image-container img {
+    max-width: 100%;
+    display: flex;
+    border-radius: 5px;
+    margin-top: 20px;
+    height: 540px;
+    width: 900px;
+    
+}
+.container p{
+    text-align: center;
+}
+.container h4{
+    text-align: right;
 }
 
 form {
-    background-color: #fff;
+    background-color:white;
     padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 330px;
+    border-radius: 1px;
+    width: 900px;
+    height: 500px;
 }
 
 h1 {
@@ -52,6 +72,10 @@ input {
     border-radius: 3px;
     box-sizing: border-box;
 }
+.form input[type="checkbox"] {
+    margin-right: 5px;
+    margin-top: 10px;
+  }
 
 button {
     width: 100%;
@@ -61,6 +85,7 @@ button {
     color: #fff;
     border-radius: 5px;
     cursor: pointer;
+    margin-top: 30px;
 }
 
 button:hover {
@@ -69,15 +94,7 @@ button:hover {
 
 .image-container {
     margin-left: 20px;
-}
-
-.image-container img {
-    max-width: 80%;
-    height: auto;
-    display: block;
-    border-radius: 5px;
-    margin-top: 20px;
-    height: 30%;
+    /* width: 80%; */
 }
 
     </style>
@@ -85,18 +102,25 @@ button:hover {
 
     <div class="container">
         <form id="loginForm">
-            <h1>Gt Stated</h1>
+            <h1>Welcome Back !</h1>
+            <p>Enter your credentials to access your acount</p>
             <div class="input-group">
-                <label for="Nom"> Nom :</label>
-                <input type="text"  id="Nom" placeholder="votre Nom">
                 <label for="email">Email:</label>
                 <input type="email" id="email" placeholder="votre email" required>
+                
+                <h4> <a href="">forget password</a></h4>
+                <div class="input-group">
+                    <label for="password">Password:</label>
+                    
+                    <input type="password" id="password" placeholder="votre mot de passe">
+                    <div>
+
+                    </div>
             </div>
-            <div class="input-group">
-                <label for="password">Password:</label>
-                <input type="password" id="password" placeholder="votre mot de passe">
+    
             </div>
             <button type="submit">Login</button>
+            
         </form>
         <div class="image-container">
             <img src="medias/auth-img.png" alt="Login Image">
