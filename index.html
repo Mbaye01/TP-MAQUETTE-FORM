@@ -1,48 +1,40 @@
-
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realisation d'une maquette</title>
     <link rel="stylesheet" href="style.css">
-    <title>Login</title>
-    <link rel="stylesheet" href="">
 </head>
 <body>
+    <section class="contenaire">
+        <form action="">
+            <h2 class="get-start">Get Start Now</h2>
+           
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required placeholder="Enter your name " />
+            <label for="email">Email address</label>
+            <input type="email" name="email" id="email"  placeholder="Enter your email" required />
 
-    <div class="container">
-        <form id="loginForm">
-            <h1>Get started!</h1>
-            <p>Enter your credentials to access your acount</p>
-            <div class="input-group">
-              <label for="name">Name</label>
-              <input type="nom" id="name" placeholder="Your name">
-                <label for="email">Email:</label>
-                <input type="email" id="email" placeholder="votre email" required>
-                <div>
+            <div class="password-forget">
+                <label for="password">Password</label><a href="#">foget password</a>
+            </div>
+            <input type="password" name="password" id="password"  placeholder="Enter your password" required />
 
-                <div class="motdepass">
-                    <label for="password">Password:</label>
-                 <a href="">forget password</a>
-                  </div>
-                    <input type="password" id="password" placeholder="votre mot de passe">
-                 <div>
-                  <div class="checkbox">
-                        <input type="checkbox" name=""> i agree to the <a href="">terms & policy</a>
-                  </div>
+            <div class="remember">
+                <input type="checkbox" name="checkbox" id="checkbox" />
+                <label for="checkbox">Remember for 30 days</label>
             </div>
-            </div>
-            </div>
-            <button type="submit">Login</button>
+            <input type="submit" name="submit" value="Login" id="submit" />
+            <p class="separator or">Or</p>
 
-                <span>Or</span>
-            <div class="svg"> <button><img src="medias/google.svg" alt="google">Sign up in with google</button>
-            <button><img src="medias/apple.svg" alt="apple">Sign up in with apple</button></div>
-            <p>Have an acount? <a href="connexion.html">Sign up</a></p>
-        </form>
-        <div class="image-container">
-            <img src="medias/auth-img.png" alt="Login Image">
+            <div class="sign-with">
+                <button><img src="medias/google.svg" alt="Sign in width google">Sign in width google</button>
+                <button><img src="medias/apple.svg" alt="Sign in width apple">Sign in width Apple</button>
         </div>
-    </div>
+        <p>Don't have an account <a href="connexion.html">Sign Up</a></p>
+        </form>
+        <img src="medias/auth-img.png" alt="" class="auth-img" />
+    </section>
 </body>
 </html>

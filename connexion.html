@@ -3,128 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Realisation d'une maquette</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <section class="contenaire">
+        <form action="">
+            <h2>Welcome back!</h2>
+            <p>Enter your Credentials to access your account</p>
 
-    <style>
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    margin: 280px;
-    padding: 0;
-    justify-content: center;
-    align-items: center;
-    font-family: Arial, sans-serif;
-}
+            <label for="email">Email address</label>
+            <input type="email" name="email" id="email"  placeholder="Enter your email" required />
 
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-    width: 800px;
-    background-color:white;
-}
-.image-container img {
-    max-width: 100%;
-    display: flex;
-    border-radius: 5px;
-    margin-top: 20px;
-    height: 540px;
-    width: 900px;
-    
-}
-.container p{
-    text-align: center;
-}
-.container h4{
-    text-align: right;
-}
-
-form {
-    background-color:white;
-    padding: 20px;
-    border-radius: 1px;
-    width: 900px;
-    height: 500px;
-}
-
-h1 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.input-group {
-    margin-bottom: 15px;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    box-sizing: border-box;
-}
-.form input[type="checkbox"] {
-    margin-right: 5px;
-    margin-top: 10px;
-  }
-
-button {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    background-color: #3a5b3a;
-    color: #fff;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 30px;
-}
-
-button:hover {
-    background-color: rgb(58, 91, 34, 0.915);
-}
-
-.image-container {
-    margin-left: 20px;
-    /* width: 80%; */
-}
-
-    </style>
-
-
-    <div class="container">
-        <form id="loginForm">
-            <h1>Welcome Back !</h1>
-            <p>Enter your credentials to access your acount</p>
-            <div class="input-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" placeholder="votre email" required>
-                
-                <h4> <a href="">forget password</a></h4>
-                <div class="input-group">
-                    <label for="password">Password:</label>
-                    
-                    <input type="password" id="password" placeholder="votre mot de passe">
-                    <div>
-
-                    </div>
+            <div class="password-forget">
+                <label for="password">Password</label><a href="#">foget password</a>
             </div>
-    
+            <input type="password" name="password" id="password"  placeholder="Enter your password" required />
+
+            <div class="remember">
+                <input type="checkbox" name="checkbox" id="checkbox" />
+                <label for="checkbox">Remember for 30 days</label>
             </div>
-            <button type="submit">Login</button>
-            
+            <input type="submit" name="submit" value="Login" id="submit" />
+            <p class="separator">Or</p>
+
+            <div class="sign-with">
+                <button><img src="medias/google.svg" alt="Sign in width google">Sign in width google</button>
+                <button><img src="medias/apple.svg" alt="Sign in width apple">Sign in width Apple</button>
+            </div>
+            <p>Don't have an account <a href="index.html">Log out</a></p>
         </form>
-        <div class="image-container">
-            <img src="medias/auth-img.png" alt="Login Image">
-        </div>
-    </div>
+        <img src="medias/auth-img.png" alt="" class="auth-img" />
+    </section>
 </body>
 </html>

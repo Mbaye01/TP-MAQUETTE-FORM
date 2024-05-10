@@ -1,217 +1,198 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
-  margin: 280px;
+:root {
+  --primary: #3A5B22;
+  --lightprimary: rgba(58,91,34,0.915);
+  --white: #ffffff;
+  --bgcolog: #F5F5F5;
+  --blue: #0F3DDE;
+  --black50: #737373;
+  --signihoverColor: rgb(247, 243, 243);
+}
+* {
+  font-family: Arial, 'sans cherif';
   padding: 0;
-  justify-content: center;
-  align-items: center;
-  font-family: Arial, sans-serif;
-  height: 2vh;
+  margin: 0;
+  box-sizing: border-box;
 }
+body {
+  background-color: var(--bgcolog);
+}
+.contenaire {
 
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100px;
-  width: 800px;
-  background-color:white;
-}
-.image-container img {
-  max-width: 100%;
-  display: flex;
-  border-radius: 5px;
-  margin-top: 20px;
-  height: 540px;
+  background-color: var(--white);
   width: 900px;
+  height: 500px;
+  position: absolute;
+  left: 50%;
+  top:50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-between;
+  border-radius: 15px;
+}
+form {
+  position: relative;
+  width: 450px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+
+}
+.auth-img {
+  width: 450px;
+  height: 500px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+h2 {
+  margin-left: 10px;
   
 }
-.container p{
-  text-align: center;
-}
-.container h4{
-  text-align: right;
-}
-
-form {
-  background-color:white;
-  padding: 20px;
-  border-radius: 1px;
-  width: 900px;
-  height: 600px;
-}
-.motdepass {
-display: flex;
-justify-content: space-between;
-margin: 10px;
-}
-
-h1 {
+p {
+  font-size: 16px;
+  padding: 10px;
   text-align: center;
   margin-bottom: 20px;
 }
-
-.input-group {
-  margin-bottom: 15px;
-}
-
 label {
-  display: block;
-  margin-bottom: 5px;
+  font-size: 14px;
+  text-align: start;
+  margin-bottom: -5px;
+  margin-left: 10px;
 }
-
 input {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  box-sizing: border-box;
-}
-.form input[type="checkbox"] {
-  margin-right: 5px;
-  margin-top: 10px;
-}
-
-button {
-  width: 100%;
-  padding: 10px;
-  border: none;
-  background-color: #3a5b3a;
-  color: #fff;
+  width: 320px;
+  padding: 5px 10px ;
+  margin: 10px;
   border-radius: 5px;
-  cursor: pointer;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-span {
-position: relative;
-text-align: center;
-margin: 15px;
-font-size: 10px;
-padding: 160px;
-}
-span::before, span::after{
-content: "";
-position: absolute;
-width: 46%;
-height: 1px;
-background-color: black;
-}
-span::after{
-right: 0;
-}
-span::before{
-left: 0;
-}
-
-button:hover {
-  background-color: rgb(58, 91, 34, 0.915);
-}
-.svg img {
-width: 10px;
-}
-.svg {
-display: flex;
-}
-
-.svg button {
-margin: 10px;
-background-color: #ffff;
-color: black;
-border: 1px solid black;
-border-radius: 10px;
-}
-
-.image-container {
-  margin-left: 20px;
-  /* width: 80%; */
-}
-
-
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
-  margin: 280px;
-  padding: 0;
-  justify-content: center;
-  align-items: center;
-  font-family: Arial, sans-serif;
-}
-
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100px;
-  width: 800px;
-  background-color:white;
-}
-.image-container img {
-  max-width: 100%;
-  display: flex;
-  border-radius: 5px;
-  margin-top: 20px;
-  height: 540px;
-  width: 900px;
-  
-}
-.container p{
-  text-align: center;
-}
-.container h4{
-  text-align: right;
-}
-
-form {
-  background-color:white;
-  padding: 20px;
-  border-radius: 1px;
-  width: 900px;
-  height: 600px;
-}
-
-h1 {
-  text-align: center;
   margin-bottom: 20px;
-}
+  border-top: var(--black50) solid;
+  border-left: var(--black50) solid;
+  border-width: 1px;
 
-.input-group {
-  margin-bottom: 15px;
 }
-
-label {
-  display: block;
-  margin-bottom: 5px;
-}
-
-input {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  box-sizing: border-box;
-}
-.form input[type="checkbox"] {
-  margin-right: 5px;
-  margin-top: 10px;
-}
-
-button {
-  width: 100%;
-  padding: 10px;
+input:hover {
+  transition-duration: 0.25s;
+  background-color: var(--bgcolog);
   border: none;
-  background-color: #3a5b3a;
-  color: #fff;
-  border-radius: 5px;
+  border-bottom: 2px var(--primary) solid;
+}
+input:focus {
+  border-color: var(--blue);
+  border-bottom-width: 2px;
+  transition-duration: 0.25s;
+  outline: none;
+}
+.password-forget {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  padding-right: 20px;
+  margin-bottom: -5px;
+
+}
+
+input[type="checkbox"] {
+  margin: 0;
+  margin-left: 15px;
+  padding: 0;
+  width: 20px;
+}
+.remember {
+  display: flex;
+}
+.remember label {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+
+}
+#submit { 
+  background-color: var(--primary);
+  color: var(--white);
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 10px;
+}
+#submit:hover {
+  background-color: var(--lightprimary);
   cursor: pointer;
-  margin-top: 30px;
+  transition-duration: 0.75s;
+}
+.separator::after { 
+  position: absolute;
+  content: "";
+  width: 150px;
+  height: 1px;
+  left: 63px;
+  bottom: 165px;
+  background-color: var(--black50);
+}
+.separator::before { 
+  position: absolute;
+  content: "";
+  width: 140px;
+  height: 1px;
+  right: 75px;
+  bottom: 165px;
+  background-color: var(--black50);
 }
 
+
+.sign-with{
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 20px;
+}
+button{
+  padding: 8px 3px;
+  border-radius: 5px;
+  border: 1px var(--black50) solid;
+  background-color: var(--white);
+
+}
+button img {
+  margin-bottom: -2px;
+  margin-right: 2px;
+  padding-bottom: -5px;
+  width: 15px;
+  height: 15px;
+}
 button:hover {
-  background-color: rgb(58, 91, 34, 0.915);
+  background-color: var(--signihoverColor);
+  cursor: pointer;
+  transition-duration: 0.5s;
+
 }
 
-.image-container {
-  margin-left: 20px;
-  /* width: 80%; */
+a { 
+  color: var(--blue);
+  text-decoration: none;
+}
+
+/* code CSS aproprié  à la page de Sign Up */
+.get-start {
+margin-bottom: 30px;
+}
+.or {
+  margin: 0px;
+}
+.or::after { 
+  position: absolute;
+  content: "";
+  width: 150px;
+  height: 1px;
+  left: 63px;
+  bottom: 135px;
+  background-color: var(--black50);
+}
+.or::before { 
+  position: absolute;
+  content: "";
+  width: 140px;
+  height: 1px;
+  right: 75px;
+  bottom: 135px;
+  background-color: var(--black50);
 }
